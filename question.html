@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>One Last Question 💙</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <main class="question-page">
+
+        <div class="question-card">
+
+            <div class="question-icon">
+                💙
+            </div>
+
+            <p class="tiny-title">
+                ✦ ONE LAST QUESTION ✦
+            </p>
+
+            <h1>
+                Did you enjoy
+                <span>your surprise?</span>
+            </h1>
+
+            <p>
+                Be honest... 👀
+            </p>
+
+
+            <div class="question-buttons">
+
+                <button
+                    id="yesButton"
+                    class="primary-btn"
+                    type="button"
+                >
+                    Yes 💙
+                </button>
+
+                <button
+                    id="noButton"
+                    class="secondary-btn"
+                    type="button"
+                >
+                    No
+                </button>
+
+            </div>
+
+
+            <div
+                id="questionAnswer"
+                style="display: none;"
+            >
+
+                <h2>
+                    Aww, I'm glad! 💙
+                </h2>
+
+                <p>
+                    I'm really happy you enjoyed
+                    your special birthday surprise. ✨
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        const yesButton =
+            document.getElementById("yesButton");
+
+        const noButton =
+            document.getElementById("noButton");
+
+        const answer =
+            document.getElementById("questionAnswer");
+
+
+        yesButton.addEventListener(
+            "click",
+            function () {
+
+                answer.style.display =
+                    "block";
+
+                yesButton.style.display =
+                    "none";
+
+                noButton.style.display =
+                    "none";
+
+            }
+        );
+
+
+        noButton.addEventListener(
+            "click",
+            function () {
+
+                answer.innerHTML = `
+                    <h2>That's okay! 💙</h2>
+                    <p>
+                        Thanks for being honest!
+                    </p>
+                `;
+
+                answer.style.display =
+                    "block";
+
+                yesButton.style.display =
+                    "none";
+
+                noButton.style.display =
+                    "none";
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

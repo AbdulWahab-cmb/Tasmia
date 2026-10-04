@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Tasmia's Memories 📸</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id="musicStartScreen">
+    <div class="music-start-content">
+        <div class="music-star">✦</div>
+
+        <h1>For Tasmia</h1>
+
+        <p>A little surprise is waiting...</p>
+
+        <button id="startMusicButton">
+            Tap to Enter ✨
+        </button>
+    </div>
+</div>
+
+<audio id="birthdayMusic" loop>
+    <source src="audio1.mp3" type="audio/mpeg">
+</audio>
+
+
+    <audio id="birthdayMusic" loop>
+        <source src="audio1.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton" onclick="toggleMusic()">
+        ♫ Music
+    </button>
+
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            Tasmia<span>♡</span>
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="memories.html" class="active">
+                Memories
+            </a>
+
+            <a href="surprise.html">
+                Surprise
+            </a>
+
+            <a href="countdown.html">
+                Countdown
+            </a>
+
+            <a href="message.html">
+                Message
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <section class="page-section">
+
+
+        <div class="section-heading">
+
+            <div class="tiny-title">
+                ✦ MEMORIES ✦
+            </div>
+
+
+            <h1>
+
+                Moments worth
+
+                <span>remembering</span>
+
+            </h1>
+
+
+            <p>
+
+                A collection of moments
+                that deserve a place here.
+
+            </p>
+
+        </div>
+
+
+        <div class="photo-grid">
+
+
+            <div
+                class="memory-card large"
+                onclick="openPhoto(this)">
+
+                <img
+                    src="tasmia2.jpg"
+                    alt="Tasmia">
+
+                <div class="photo-label">
+                    A beautiful moment ✨
+                </div>
+
+            </div>
+
+
+            <div
+                class="memory-card"
+                onclick="openPhoto(this)">
+
+                <img
+                    src="tasmia3.jpg"
+                    alt="Memory">
+
+                <div class="photo-label">
+                    A special memory 💗
+                </div>
+
+            </div>
+
+
+            <div
+                class="memory-card"
+                onclick="openPhoto(this)">
+
+                <img
+                    src="tasmia4.jpg"
+                    alt="Memory">
+
+                <div class="photo-label">
+                    Your beautiful eyes 👀
+                </div>
+
+            </div>
+
+
+            <div
+                class="memory-card"
+                onclick="openPhoto(this)">
+
+                <img
+                    src="tasmia5.jpg"
+                    alt="Memory">
+
+                <div class="photo-label">
+                    Another chapter ✨
+                </div>
+
+            </div>
+
+
+            <div
+                class="memory-card"
+                onclick="openPhoto(this)">
+
+                <img
+                    src="tasmia6.jpg"
+                    alt="Memory">
+
+                <div class="photo-label">
+                    Forever remembered 💫
+                </div>
+
+            </div>
+
+
+        
+
+
+        </div>
+
+
+        <a
+            href="surprise.html"
+            class="primary-btn next-button">
+
+            Continue to the Surprise → 🎁
+
+        </a>
+
+
+    </section>
+
+
+    <!-- Lightbox -->
+
+    <div id="lightbox"
+         onclick="closePhoto()">
+
+        <img id="lightboxImage">
+
+    </div>
+
+
+    <footer>
+
+        Memories are little pieces of forever. ❤️
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

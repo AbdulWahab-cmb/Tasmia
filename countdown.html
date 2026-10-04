@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Countdown 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id="musicStartScreen">
+    <div class="music-start-content">
+        <div class="music-star">✦</div>
+
+        <h1>For Tasmia</h1>
+
+        <p>A little surprise is waiting...</p>
+
+        <button id="startMusicButton">
+            Tap to Enter ✨
+        </button>
+    </div>
+</div>
+
+<audio id="birthdayMusic" loop>
+    <source src="audio1.mp3" type="audio/mpeg">
+</audio>
+
+
+    <audio id="birthdayMusic" loop>
+        <source src="audio1.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton" onclick="toggleMusic()">
+        ♫ Music
+    </button>
+
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            Tasmia<span>♡</span>
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="memories.html">Memories</a>
+
+            <a href="surprise.html">Surprise</a>
+
+            <a href="countdown.html"
+               class="active">
+
+                Countdown
+
+            </a>
+
+            <a href="message.html">
+                Message
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <section class="countdown-section">
+
+
+        <div class="tiny-title">
+            ✦ UNTIL THE NEXT CELEBRATION ✦
+        </div>
+
+
+        <h1>
+
+            Tasmia's Birthday
+
+            <span>Countdown</span>
+
+        </h1>
+
+
+        <p>
+
+            The next 2nd of November
+            is getting closer...
+
+        </p>
+
+
+        <div class="countdown">
+
+
+            <div class="time-card">
+
+                <strong id="days">
+                    00
+                </strong>
+
+                <span>
+                    Days
+                </span>
+
+            </div>
+
+
+            <div class="time-card">
+
+                <strong id="hours">
+                    00
+                </strong>
+
+                <span>
+                    Hours
+                </span>
+
+            </div>
+
+
+            <div class="time-card">
+
+                <strong id="minutes">
+                    00
+                </strong>
+
+                <span>
+                    Minutes
+                </span>
+
+            </div>
+
+
+            <div class="time-card">
+
+                <strong id="seconds">
+                    00
+                </strong>
+
+                <span>
+                    Seconds
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="cake-emoji">
+            🎂
+        </div>
+
+
+        <a
+            href="message.html"
+            class="primary-btn next-button">
+
+            Read the Final Message → 💌
+
+        </a>
+
+
+    </section>
+
+
+    <footer>
+
+        See you on 2 November. 💗
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

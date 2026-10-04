@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Surprise — Tasmia ♡</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         LOADING SCREEN
+    ========================================== -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <div class="loader-star">
+                ✦
+            </div>
+
+            <h1>
+                TASMIA
+            </h1>
+
+            <p>
+                A special story is waiting...
+            </p>
+
+            <div class="loader-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         MUSIC START SCREEN
+    ========================================== -->
+
+    <div id="musicStartScreen">
+
+        <div class="music-start-content">
+
+            <div class="music-star">
+                ✦
+            </div>
+
+            <h1>
+                For Tasmia
+            </h1>
+
+            <p>
+                A little surprise is waiting...
+            </p>
+
+            <button
+                id="startMusicButton"
+                type="button"
+            >
+                Tap to Enter ✨
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         BACKGROUND MUSIC
+    ========================================== -->
+
+    <audio
+        id="birthdayMusic"
+        loop
+        preload="auto"
+    >
+
+        <source
+            src="audio1.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Tasmia<span>♡</span>
+            </a>
+
+
+            <nav>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="memories.html">
+                    Memories
+                </a>
+
+                <a
+                    href="surprise.html"
+                    class="active"
+                >
+                    Surprise
+                </a>
+
+                <a href="countdown.html">
+                    Countdown
+                </a>
+
+                <a href="message.html">
+                    Message
+                </a>
+
+            </nav>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================
+         SURPRISE SECTION
+    ========================================== -->
+
+    <section class="surprise-section">
+
+        <div class="surprise-card">
+
+
+            <!-- Gift -->
+
+            <div class="gift-box">
+                🎁
+            </div>
+
+
+            <!-- Small heading -->
+
+            <div class="tiny-title">
+                ✦ YOU FOUND IT ✦
+            </div>
+
+
+            <!-- Main heading -->
+
+            <h1>
+
+                There's a little
+
+                <span>
+                    surprise
+                </span>
+
+            </h1>
+
+
+            <!-- Description -->
+
+            <p>
+                Something special is waiting behind this button.
+            </p>
+
+
+            <!-- =================================
+                 OPEN GIFT BUTTON
+            ================================== -->
+
+            <button
+                id="surpriseButton"
+                class="primary-btn"
+                type="button"
+            >
+                Open the Gift 🎁
+            </button>
+
+
+            <!-- =================================
+                 SECRET MESSAGE
+            ================================== -->
+
+            <div
+                id="secretMessage"
+                style="display: none;"
+            >
+
+
+                <div class="heart-animation">
+                    💙
+                </div>
+
+
+                <h2>
+                    Happy Birthday, Tasmia!
+                </h2>
+
+
+                <p>
+                    I hope this birthday brings you
+                    lots of happiness, beautiful memories,
+                    and many amazing moments.
+                </p>
+
+
+                <p>
+                    Keep smiling, keep dreaming,
+                    and enjoy your special day. ✨
+                </p>
+
+
+                <div class="divider">
+                    ✦ ✦ ✦
+                </div>
+
+
+                <h2>
+                    Have an amazing birthday! 🎂
+                </h2>
+
+
+            </div>
+
+<a
+    href="countdown.html"
+    class="secondary-btn next-button"
+>
+    Continue to Countdown →
+</a>
+        </div>
+      
+    </section>
+
+
+    <!-- =========================================
+         MUSIC BUTTON
+    ========================================== -->
+
+    <button
+        id="musicButton"
+        type="button"
+        onclick="toggleMusic()"
+    >
+        ♫ Music
+    </button>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        Made especially for
+        <span>Tasmia</span>
+        💙
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
